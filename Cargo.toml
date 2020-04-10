@@ -1,0 +1,12 @@
+[package]
+name = "gopro_fetcher"
+version = "0.1.0"
+authors = ["Edward O'Callaghan <edward@antitrust.cc>"]
+edition = "2018"
+
+[dependencies]
+serde = "1.0.104"
+serde_derive = "1.0.104"
+# https://stackoverflow.com/questions/59101974/the-trait-stdopstry-is-not-implemented-for-impl
+reqwest = { version = "0.10.0", features = ["blocking", "json"] }
+wake-on-lan = "0.2.0"
